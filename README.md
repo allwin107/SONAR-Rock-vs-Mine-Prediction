@@ -64,4 +64,23 @@ The application features a modern, glassmorphic web interface called **EchoDetec
 
 ## 🌐 Deployment
 
-This application is configured for deployment on Vercel. The `vercel.json` file contains the necessary configuration for serverless deployment.
+This application is configured for deployment on Vercel. 
+
+### Quick Deploy to Vercel
+
+1. Fork or clone this repository
+2. Go to [Vercel](https://vercel.com) and sign in
+3. Click "Add New Project" and import this repository
+4. Vercel will auto-detect the configuration
+5. Click "Deploy" and wait for completion
+6. Your app will be live!
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Live Demo
+
+Once deployed, you can access the web interface to:
+- Input 60 sonar frequency values
+- Load sample Rock or Mine data
+- Get instant predictions with confidence scores
+- View results with beautiful visual indicators
