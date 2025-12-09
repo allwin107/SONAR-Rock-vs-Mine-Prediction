@@ -23,7 +23,13 @@ wheels/
 .installed.cfg
 *.egg
 
-# Model files
+# Development files
+dev/
+train_model.py
+SONAR Rock vs Mine Prediction.ipynb
+build.sh
+
+# Model files (will be generated on deployment)
 *.pkl
 
 # IDE
@@ -39,3 +45,7 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# Documentation (keep in repo but not needed for deployment)
+DEPLOYMENT.md
+NEXT_STEPS.md
