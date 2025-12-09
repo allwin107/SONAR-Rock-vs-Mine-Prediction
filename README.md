@@ -29,18 +29,39 @@ You can find the dataset here: [UCI SONAR Dataset](https://archive.ics.uci.edu/m
 
 ## 🚀 How to Run
 
+### Local Development
+
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/allwin107/SONAR-Rock-vs-Mine-Prediction.git
    cd SONAR-Rock-vs-Mine-Prediction
    ```
-3. Install required packages:
 
-    ```
-    pip install -r requirements.txt
-    ```
-3. Open the notebook:
-   
-    SONAR_Rock_vs_Mine_Prediction.ipynb
-   
-5. Run all cells to train and test the model.
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Train the model:
+   ```bash
+   python train_model.py
+   ```
+
+4. Run the Flask application:
+   ```bash
+   python app.py
+   ```
+
+5. Open your browser and navigate to `http://localhost:5000`
+
+### Web Interface
+
+The application features a modern, glassmorphic web interface called **EchoDetect** that allows you to:
+- Input 60 comma-separated sonar frequency values
+- Load sample data for Rock or Mine predictions
+- Get real-time predictions with confidence scores
+- View results with visual indicators
+
+## 🌐 Deployment
+
+This application is configured for deployment on Vercel. The `vercel.json` file contains the necessary configuration for serverless deployment.

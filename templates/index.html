@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoDetect | Sonar Analysis AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>EchoDetect</h1>
+            <p>Advanced Sonar Rock vs. Mine Classification</p>
+        </header>
+
+        <section class="glass-panel">
+            <div class="input-section">
+                <label for="sonar-data">Sonar Frequencies (60 comma-separated values)</label>
+                <textarea id="sonar-data" placeholder="0.02, 0.0371, 0.0428, ..."></textarea>
+                
+                <div class="controls">
+                    <button id="fill-rock" class="btn secondary">Load Sample (Rock)</button>
+                    <button id="fill-mine" class="btn secondary">Load Sample (Mine)</button>
+                    <button id="analyze-btn" class="btn primary">Analyze Signal</button>
+                    <button id="clear-btn" class="btn text-only">Clear</button>
+                </div>
+            </div>
+
+            <div id="result-section" class="result-section hidden">
+                <div class="loader hidden" id="loader"></div>
+                <div id="result-content" class="hidden">
+                    <h2>Detection Result</h2>
+                    <div id="prediction-badge" class="badge"></div>
+                    <div class="confidence-meter">
+                        <span>Confidence</span>
+                        <div class="bar-container">
+                            <div id="confidence-bar" class="bar"></div>
+                        </div>
+                        <span id="confidence-value">0%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Powered by Logistic Regression & Scikit-Learn</p>
+        </footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
